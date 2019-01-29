@@ -438,8 +438,8 @@ class ReactTags extends Component {
     return (
       <div className={ClassNames(this.state.classNames.tags, 'react-tags-wrapper')}>
         <div className={this.state.classNames.selected}>
-          {tagItems}
           {this.props.inline && tagInput}
+          {tagItems}
         </div>
         {!this.props.inline && tagInput}
       </div>
